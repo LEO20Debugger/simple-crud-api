@@ -2,20 +2,15 @@ const express = require('express');
 const router = express.Router();
 const { getProducts, getProduct, createProduct, updateProduct, deleteProduct } = require('../controller/product.conroller.js')
 
-// GET Route: Fetch all products
-router.get('/', getProducts);
+router.get('/', getProducts); // GET Route: Fetch all products
 
-// Get a single product by ID
-router.get("/:id", getProduct);
+router.get("/:id", getProduct); // Get a single product by ID
 
-// POST Route: Create a new product
-router.post('/', createProduct);
+router.post('/', createProduct); // POST Route: Create a new product
 
-// PUT Route: Update a product by ID
-router.put('/:id', updateProduct);
+router.put('/:id', updateProduct); // PUT Route: Update a product by ID
 
-// DELETE Route: Delete a product by ID
-router.delete('/:id', deleteProduct);
+router.delete('/:id', deleteProduct); // DELETE Route: Delete a product by ID
 
 
 module.exports = router;
