@@ -22,7 +22,7 @@ app.listen(3000, () => {
 });
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://Admin:EMz6JEW9nq41O2Mw@backenddb.zxcmi.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB')
+mongoose.connect('mongodb+srv://myDatabaseUser:D1fficultP%40ssw0rd@mongodb0.example.com/?authSource=admin&replicaSet=myRepl')
     .then(() => {
         console.log('Connected to database!');
     })
